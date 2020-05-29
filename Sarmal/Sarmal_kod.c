@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* Şekildeki listeyi içten dışa sarmal şeklinde oluşturur listenin elemanları üzerinde sağ,sol,yukarı ve aşağı hareketleri yapılabilir
- * Listeden istenilen 2 sayı arasında yol almak için hangi sayılardan geçilir ve kaç hareket yapılır bulan algoritma
- * X ve Y değerlerine sahip karelerin arasında ilerlemek için x ve y ağaçları bulunur. Bir tane olan X ağacı her değerini için bir Y ağacı bulundurur.
- * Örnek olarak x=2 y=5 bu durumda x ağacında 2 bulunur ve 2'nin y ağacına gidilir. Orda da 5 değeri bulunur. Bulunan node içerisinde o koordinattaki struct kare bulunur
+/* Åekildeki listeyi iÃ§ten dÄ±ÅŸa sarmal ÅŸeklinde oluÅŸturur listenin elemanlarÄ± Ã¼zerinde saÄŸ,sol,yukarÄ± ve aÅŸaÄŸÄ± hareketleri yapÄ±labilir
+ * Listeden istenilen 2 sayÄ± arasÄ±nda yol almak iÃ§in hangi sayÄ±lardan geÃ§ilir ve kaÃ§ hareket yapÄ±lÄ±r bulan algoritma
+ * X ve Y deÄŸerlerine sahip karelerin arasÄ±nda ilerlemek iÃ§in x ve y aÄŸaÃ§larÄ± bulunur. Bir tane olan X aÄŸacÄ± her deÄŸerini iÃ§in bir Y aÄŸacÄ± bulundurur.
+ * Ã–rnek olarak x=2 y=5 bu durumda x aÄŸacÄ±nda 2 bulunur ve 2'nin y aÄŸacÄ±na gidilir. Orda da 5 deÄŸeri bulunur. Bulunan node iÃ§erisinde o koordinattaki struct kare bulunur
  */
 struct kare{
     int deger;
@@ -176,21 +176,21 @@ struct Xagac* listeyi_olustur(int eleman_sayisi){
         		yon_degistirme_sayisi++;
         		arttirma=0;
         	}
-		}
-		switch(yon){
-			case 1:
-				x_degeri++;
-				break;
-			case 2:
-				y_degeri--;
-				break;
-			case 3:
-				x_degeri--;
-				break;
-			case 4:
-				y_degeri++;
-				break;
-		}
+	}
+	switch(yon){
+		case 1:
+			x_degeri++;
+			break;
+		case 2:
+			y_degeri--;
+			break;
+		case 3:
+			x_degeri--;
+			break;
+		case 4:
+			y_degeri++;
+			break;
+	}
     }
     return x_agac;
 }
@@ -256,14 +256,14 @@ void iki_eleman_arasi_bul(struct Xagac *x_agac,int sayi1,int sayi2){
 
 int main()
 {
-	struct Xagac *x_agac=NULL;
-	int sayi;
-	printf("sarmalin eleman sayisini giriniz:\n");
-	scanf("%d",&sayi);
+    struct Xagac *x_agac=NULL;
+    int sayi;
+    printf("sarmalin eleman sayisini giriniz:\n");
+    scanf("%d",&sayi);
     x_agac = listeyi_olustur(sayi);
     printf("sarmalda yol haritasi cizmek icin 2 sayi giriniz:\n");
     int a,b;
-	scanf("%d",&a);
+    scanf("%d",&a);
     scanf("%d",&b);
     iki_eleman_arasi_bul(x_agac,a,b);
     return 0;
