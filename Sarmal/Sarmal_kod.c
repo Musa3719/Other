@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /* Şekildeki listeyi içten dışa sarmal şeklinde oluşturur listenin elemanları üzerinde sağ,sol,yukarı ve aşağı hareketleri yapılabilir
  * Listeden istenilen 2 sayı arasında yol almak için hangi sayılardan geçilir ve kaç hareket yapılır bulan algoritma
- * X ve Y değerlerine sahip karelerin arasında ilerlemek için x ve y ağaçları bulunur. Bir tane olan X ağacı her değerini için bir Y ağacı bulundurur.
+ * X ve Y koordinatlarına sahip karelerin arasında ilerlemek için x ve y ağaçları bulunur. Bir tane olan X ağacı her değeri için bir Y ağacı bulundurur.
  * Örnek olarak x=2 y=5 bu durumda x ağacında 2 bulunur ve 2'nin y ağacına gidilir. Orda da 5 değeri bulunur. Bulunan node içerisinde o koordinattaki struct kare bulunur
  */
 struct kare{
