@@ -7,7 +7,10 @@ for j in range(n):
     isim=[]
     sessiz=["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
     sesli=["a","e","i","o","u"]
-    rakam=int(input("isim kaç harfli olsun: "))
+    rakam=input("isim kaç harfli olsun: ")
+    if rakam=="":
+        continue
+    rakam=int(rakam)
     isim.append(random.choice(sessiz+sesli))
     for i in range(1,rakam):
         if isim[i-1] in sesli:#eğer bir önceki harf sesli ise kesin olarak sessiz harf seçilir
