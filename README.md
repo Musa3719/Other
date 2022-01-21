@@ -1,2 +1,1 @@
-# Airon
-Yaptığım bazı çalışmalar
+# Other
